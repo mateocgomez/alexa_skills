@@ -1,0 +1,84 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cafe de la mañana",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CafeIntent",
+                    "slots": [
+                        {
+                            "name": "firstname",
+                            "type": "AMAZON.FirstName",
+                            "samples": [
+                                "{firstname}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "soy {firstname}",
+                        "me llamo {firstname} empleado",
+                        "{firstname}",
+                        "empezar cafe con {firstname}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CafeIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "firstname",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.839853194893.282473893237"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.839853194893.282473893237",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "dame tu nombre para empezar"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "con cual empleado de workr estoy dialogando"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "quien eres tu"
+                    }
+                ]
+            }
+        ]
+    }
+}
