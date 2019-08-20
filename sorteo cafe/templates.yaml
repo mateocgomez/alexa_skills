@@ -1,6 +1,6 @@
-welcome_text: Quien invita el cafe el dia de hoy, di tu nombre o di quien eres tu para poder empezar con el feliz comprador
+welcome_text: Buenos dias amo, quien invita el cafe el dia de hoy, di tu nombre amo  para poder saber que amo gasta el cafe hoy.
 
-hello: Hola {{ firstname }}. La persona que invita cafe el dia de hoy es Jose Diaz
+hello: Hola amo {{ firstname }}, soy clarita tu esclava y la persona que invita cafe el dia de hoy es Jose Diaz
 
 ask_name: cual es tu nombre
 
