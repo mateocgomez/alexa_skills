@@ -23,5 +23,5 @@ def hello(firstname):
     response_text = render_template('hello', firstname=firstname)
     return statement(response_text).simple_card('Hola', response_text)
 
-if __name__=='__main__'
-    app-run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
